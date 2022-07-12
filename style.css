@@ -1,0 +1,45 @@
+/* @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap'); */
+@import url('http://fonts.cdnfonts.com/css/perfect-dos-vga-437');
+
+body {
+   background-color: rgb(247, 238, 217);
+   /* background: repeating-linear-gradient(rgba(247, 236, 211, 1), rgb(247, 223, 169) 1px, transparent 1px, transparent 4px); */
+   /* font-family: 'VT323', monospace; */
+   font-family: 'Perfect DOS VGA 437', sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+
+.header {
+   width: 100%;
+   border-bottom: solid 1px;
+}
+
+.container {
+   margin: 0;
+   padding: 0 5%;
+}
+
+.wrapper {
+   height: 100vh;
+}
+
+.dot {
+   width: 8px;
+   background-color: black;
+   height: 8px;
+   border-radius: 50%;
+   margin-left: -3px;
+   margin-top: -2px;
+}
+
+.line {
+   position: absolute;
+   width: 2px;
+   background-color: black;
+   height: 100%;
+   left: 50%;
+   top: 30%;
+}
+

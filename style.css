@@ -23,7 +23,12 @@ body {
 
 .wrapper {
    height: 100vh;
+   position: relative;
+   margin: 10% 0;
+   display: flex;
 }
+
+
 
 .dot {
    width: 8px;
@@ -34,12 +39,51 @@ body {
    margin-top: -2px;
 }
 
-.line {
+#main .line {
    position: absolute;
    width: 2px;
    background-color: black;
    height: 100%;
    left: 50%;
-   top: 30%;
+   top: 0%;
+}
+ 
+
+h3{
+  margin: 0; 
 }
 
+#one  .dot{
+   background-color: rgb(247, 238, 217);
+   border: solid 2px #000;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+}
+
+.left, .right{
+   width: 50%;
+   padding:0 5%;
+}
+.right{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.buttons{
+   display: flex;
+   justify-content: space-around;
+   margin-top: 10%;
+}
+.buttons button{
+   font-size: 1.2rem;
+   width: 35%;
+   padding: 2% 5%;
+   border: solid 2px;
+   border-radius: 2em;
+   font-family: 'Perfect DOS VGA 437', sans-serif;
+   background: transparent;
+}
+button:focus{
+   background-color: rgb(125, 116, 190);
+}

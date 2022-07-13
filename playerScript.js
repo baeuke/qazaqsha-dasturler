@@ -8,10 +8,12 @@ const forwardBtn = document.getElementById("forward");
 const radioBtn = document.getElementById('radio-app');
 
 const contentArray = [
-    {nameMusic: "Jan syry", musicSource: `<source src="/mus/jansyry.wav" type="audio/mpeg">`, duration:96},
-    {nameMusic: "Aq bosağa", musicSource: `<source src="/mus/akbosaga.mp3" type="audio/mpeg"> type="audio/mpeg">`, duration:155},
-    {nameMusic: "Şudyñ boiynda", musicSource: `<source src="/mus/shu.mp3" type="audio/mpeg"> type="audio/mpeg">`, duration:96},
-    {nameMusic: "Toi jyry", musicSource: `<source src="/mus/toizhyry.mp3" type="audio/mpeg"> type="audio/mpeg">`, duration:182},
+    {nameMusic: "Jan syry", musicSource: `<source src="/mus/zhansyry.mp3" type="audio/mpeg">`, duration:65},
+    {nameMusic: "Aq bosağa", musicSource: `<source src="/mus/akbosaga.mp3" type="audio/mpeg"> type="audio/mpeg">`, duration:55},
+    {nameMusic: "Şudyñ boiynda", musicSource: `<source src="/mus/shu.mp3" type="audio/mpeg"> type="audio/mpeg">`, duration:60},
+    {nameMusic: "Toi jyry", musicSource: `<source src="/mus/toizhyry.mp3" type="audio/mpeg"> type="audio/mpeg">`, duration:51},
+    {nameMusic: "Belgisiz Zhan", musicSource: `<source src="/mus/orda1.mp3" type="audio/mpeg"> type="audio/mpeg">`, duration:72},
+    {nameMusic: "Tagdyr", musicSource: `<source src="/mus/orda2.mp3" type="audio/mpeg"> type="audio/mpeg">`, duration:80}
 ];
 
 let index = 0;

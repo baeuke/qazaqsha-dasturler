@@ -1,4 +1,5 @@
 @import url('http://fonts.cdnfonts.com/css/perfect-dos-vga-437');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
    background-color: rgb(249, 227, 175);
@@ -8,6 +9,9 @@ body {
    /* font-family: 'Press Start 2P', cursive; */
    margin: 0;
    padding: 0;
+   font-family: 'Press Start 2P', cursive;
+   
+      overflow-x: hidden;
 }
 
 /* ************ START HEADER STYLES ************ */
@@ -113,13 +117,47 @@ body {
 }
 
 .top-section {
-  
+   display: flex;
+   height: 30vh;
    /* text-align: center; */
    padding: 4rem 0;
-   max-width: 600px;
-   height: 25vh;
+   /* max-width: 600px; */
+   /* height: 25vh; */
    /* margin: 0 auto; */
 }
+
+.top-section p {
+   height: 33vh;
+   font-size: 10px;
+   text-decoration-line: none;
+   line-height: 200%;
+}
+
+.section p {
+   font-size: 10px;
+   line-height: 200%;
+}
+
+.top-section h3 {
+   color: rgb(36, 23, 99);
+}
+
+.top-section .auto-input {
+   color: rgb(36, 23, 99);
+}
+
+.top-section1 {
+   width: 70%;
+}
+
+.top-section2 {
+   display: flex;
+   flex-direction: column;
+   padding: 0 25px;
+   width: 130px;
+   margin-left: 30px;
+}
+
 .box{
    position: relative;
 }
@@ -313,3 +351,30 @@ button:focus{
 }
 
 
+
+.genderPicture {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.genderPicture {
+   height: 430px;
+
+}
+
+.genderPicture img {
+   width: 250px;
+}
+
+.genderBtn {
+   display: flex;
+   justify-content: center;
+   margin-top: 15px;
+   cursor: pointer;
+}
+
+.spanP {
+   color: rgb(36, 23, 99);
+   font-size: 15px;
+}

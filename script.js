@@ -10,11 +10,22 @@ let typed = new Typed(".auto-input", {
 })
 
 let typed2 = new Typed(".desc", {
-    strings: ["It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy."],
+    strings: [`Дүниеде өз тәжірибесін, білімін, жетістіктерін жаңа ұрпаққа жеткізіп отыратын өзіндік дәстүрі жоқ халық жоқ. Мәдениет пен рухани өмірдің барлық салаларын жаңғыртуда, өмірді бұдан да бай, әдемі, мағыналы ету жолындағы кейінгі ұрпақтардың ғасырлар бойы жасаған күш-жігерін жүзеге асыруда, жаңа мен ескінің сабақтастығын қамтамасыз етуде, қоғам мен жеке тұлғаның үйлесімді дамуында дәстүрлердің маңызы зор.
+
+    Дәстүрлерді сіңіру адамдарда әлеуметтік қажетті қасиеттерді, әдет-ғұрыптарды және әлеуметтік белсенділік пен мінез-құлық дағдыларын қалыптастыруға ықпал етеді.
+ `],
     typeSpeed: 20,
     backSpeed: 0,
     loop: false
 })
+
+let typed3 = new Typed(".desc2", {
+   strings: [`
+    Проект  Qazaqi Dästürler танымдық және тәрбиелік қызмет атқарады.`],
+   typeSpeed: 20,
+   backSpeed: 0,
+   loop: false
+});
 
 
 // ********* FULL SCREEN ********* //

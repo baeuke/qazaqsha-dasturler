@@ -1,75 +1,208 @@
-/* @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap'); */
 @import url('http://fonts.cdnfonts.com/css/perfect-dos-vga-437');
 
 body {
-   background-color: rgb(247, 238, 217);
-   /* background: repeating-linear-gradient(rgba(247, 236, 211, 1), rgb(247, 223, 169) 1px, transparent 1px, transparent 4px); */
+   background-color: rgb(249, 227, 175);
+   background: repeating-linear-gradient(rgba(249, 227, 175, 1), rgb(247, 223, 169) 1px, transparent 1px, transparent 4px);
    /* font-family: 'VT323', monospace; */
-   font-family: 'Perfect DOS VGA 437', sans-serif;
+   font-family: 'Perfect DOS VGA 437 Win', sans-serif;
+   /* font-family: 'Press Start 2P', cursive; */
    margin: 0;
    padding: 0;
 }
 
-
+/* ************ START HEADER STYLES ************ */
 .header {
    width: 100%;
-   border-bottom: solid 1px;
-}
-
-.container {
-   margin: 0;
-   padding: 0 5%;
-}
-
-.wrapper {
-   height: 100vh;
-   position: relative;
-   margin: 10% 0;
-   display: flex;
-}
-
-
-
-.dot {
-   width: 8px;
-   background-color: black;
-   height: 8px;
-   border-radius: 50%;
-   margin-left: -3px;
-   margin-top: -2px;
-}
-
-#main .line {
-   position: absolute;
-   width: 2px;
-   background-color: black;
-   height: 100%;
-   left: 50%;
-   top: 0%;
-}
- 
-
-h3{
-  margin: 0; 
-}
-
-#one  .dot{
    background-color: rgb(247, 238, 217);
-   border: solid 2px #000;
-    width: 40px;
-    height: 40px;
-    margin-left: -20px;
+   background: repeating-linear-gradient(rgba(247, 236, 211, 1), rgb(245, 220, 176) 1px, rgba(247, 236, 211, 1) 1px, rgb(245, 220, 176) 4px);
+   border-bottom: solid 1px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: fixed;
+   z-index: 101;
+   height: 30px;
+   /* padding: 0; */
+   /* display: none; */
 }
 
-.left, .right{
-   width: 50%;
-   padding:0 5%;
+
+
+.header img {
+   width: 40px;
 }
-.right{
+
+.naming {
+   margin-left: 10px;
    display: flex;
+   align-items: center;
+}
+
+.naming h3 {
+   margin-left: 10px;
+}
+
+#time {
+   padding: 0 7px;
+   /* margin-right: 10px; */
+}
+
+#screenButton:hover {
+   cursor: pointer;
+}
+
+.fa-expand {
+   margin-right: 10px;
+}
+
+.fullscreen {
+   display: flex;
+   align-items: center;
+   border-right: solid 1.5px;
+   border-left: solid 1.5px;
+   height: 100%;
+   padding: 0 7px;
+}
+
+.menu {
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+/* ************ END OF HEADER STYLES ************ */
+
+#radio-app {
+   position: fixed;
+   top: 10%;
+   right: 20px;
+   width: 90px;
+   height: 70px;
+}
+
+#radio-app img {
+   width: 70px;
+   margin-bottom: 0;
+   padding: 0;
+}
+
+.wrap {
+   display: flex;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
 }
+
+.wrap p {
+   margin-top: 0;
+   font-size: smaller;
+   font-weight: lighter;
+}
+
+#radio-app:hover {
+   cursor: pointer;
+}
+
+.container {
+   padding: 2rem;
+   padding-bottom: 400px;
+   margin: 0 auto;
+   /* auto for right and left nakes an elem centered */
+   max-width: 800px;
+}
+
+.top-section {
+   /* text-align: center; */
+   padding: 4rem 0;
+   max-width: 600px;
+   height: 25vh;
+   /* margin: 0 auto; */
+}
+
+.timeline {
+   position: relative;
+   min-height: 150px;
+}
+
+/* ************ STYLES ************ */
+
+.wrapper {
+   margin-top: 55%;
+}
+
+.line {
+   position: absolute;
+   z-index: 2;
+   width: 2px;
+   left: calc(50% - 1px);
+   top: -10%;
+   bottom: -50%;
+   background-color: black;
+   /* display: none; */
+}
+
+.line:before,
+.line:after {
+   position: absolute;
+   display: block;
+   content: '';
+   height: 1rem;
+   width: 1rem;
+   border-radius: 50%;
+   background-color: black;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.line:after {
+   bottom: 0;
+}
+
+.section {
+   display: flex;
+   opacity: 0;
+   transform: translateX(-100%);
+   transition: 600ms ease;
+   position: relative;
+   /* z-index: 1; */
+   margin: 100px 0;
+   padding: 1rem;
+   border-radius: 1rem;
+   align-items: center;
+   min-height: 600px;
+   /* min-height: 50vh; */
+}
+
+.odd {
+   flex-direction: row-reverse;
+   transform: translateX(100%)
+}
+
+.dot {
+   position: absolute;
+   display: block;
+   height: 2rem;
+   width: 2rem;
+   border-radius: 50%;
+   background-color: rgb(247, 238, 217);
+   border: solid 2px #000;
+   left: 50%;
+   top: 50%;
+   transform: translateX(-50%);
+   z-index: 3;
+}
+
+.content {
+   width: calc(50% - 2rem);
+}
+
+.show-me {
+   transform: none;
+   opacity: 1;
+}
+
+
+
 .buttons{
    display: flex;
    justify-content: space-around;
@@ -86,4 +219,95 @@ h3{
 }
 button:focus{
    background-color: rgb(125, 116, 190);
+}
+
+
+
+
+/* ****************** PLAYER CSS ****************** */
+
+.player {
+   z-index: 100;
+   /* background-color: rgb(247, 238, 217); */
+   background-color: rgb(247, 238, 217);
+   background: repeating-linear-gradient(rgba(247, 236, 211, 1), rgb(245, 220, 176) 1px, rgba(247, 236, 211, 1) 1px, rgb(245, 220, 176) 4px);
+   position: fixed;
+   margin: 0%;
+   border: solid 2px;
+   border-radius: 0.3em;
+   width: 300px;
+   display: flex;
+   flex-direction: column;
+   top: 45%;
+   left: 20px;
+}
+
+.part3 {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 15px;
+   cursor: pointer;
+}
+
+.part3 img {
+   margin: 0 5px;
+   width: 35px;
+}
+
+.close {
+   margin: 10px;
+}
+
+.progressBar {
+   margin: 5px 25px;
+   background-color: rgb(181, 175, 175);
+   height: 3px;
+
+}
+
+.blackLine {
+   width: 0%;
+   background-color: rgb(13, 13, 13);
+   height: 3px;
+   position: relative;
+
+}
+
+.player .part2 {
+   text-align: center;
+}
+
+.part2 h4 {
+   margin-bottom: 6px;
+}
+
+/* .blackLine::after{
+   margin-left: 75px;
+   position: absolute;
+   top: -3px;
+   display: block;
+   content: '';
+   width: 3px;
+   background-color: rgb(13, 13, 13);
+   height: 10px;
+} */
+.hide {
+   display: none;
+}
+
+
+
+
+.picture {
+      /* opacity:s 0; */
+      /* transform: translateX(100%); */
+      position: absolute;
+      transition: 600ms ease;
+      position: relative;
+      /* z-index: 1; */
+      margin: 100px 0;
+      padding: 1rem;
+      border-radius: 1rem;
+      align-items: center;
+      min-height: 600px;
 }

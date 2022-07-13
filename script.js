@@ -2,11 +2,13 @@ const genderBtn = document.getElementById('genderBtn');
 const genderPicture = document.getElementById('genderPicture');
 const shildehana = document.getElementById('shildehana');
 const qyrqynansh = document.getElementById('qyrqynansh');
+// console.log(qyrqynansh)
 const sundettoiTitle = document.getElementById('sundettoiTitle');
 const sundettoiP = document.getElementById('sundettoiP');
 const atqaMingyzu = document.getElementById('atqaMingyzu');
 const myLine = document.getElementById('line');
-
+const att = document.getElementById('at');
+console.log(att)
 const screenBtn = document.getElementById('screenButton');
 let isFullScreen = false;
 
@@ -101,7 +103,7 @@ function checkTime(i) {
 
 let isGirl = false;
   genderBtn.onclick = ()=>{
-    console.log(isGirl);
+   //  console.log(isGirl);
    if(isGirl){
     genderBtn.innerHTML = `<img src="/img/buttonUl.png" alt="">`;
     genderPicture.src = "/img/ul.png";
@@ -114,6 +116,11 @@ let isGirl = false;
     sundettoiP.innerHTML = `Қазақта шілдеханадан соң ең атаулы той – сүндет тойы. Ес тоқтатата бастаған баланың өз өміріндегі ағайын-туыс ортасында өзіне деген ықыласты сезініп, құттықтаулар мен бата-тілекті қабылдайтын алғашқы тойы. 
     </br>
        Сүндетке отырған баланың да мінез-құлқы бірден өзгереді. Шапқылап ойнап жүретін баланың мінезі салмақтанып, жүріс-тұрысы жинақталып, байсалды қалыпқа түседі. Айналасына да басқаша қарай бастайды.`;
+       
+       console.log("1")
+   att.classList.add("hidden");
+   console.log("2")
+
    }
    else{
     genderBtn.innerHTML = `<img src="/img/buttonQyz.png" alt="">`;

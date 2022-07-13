@@ -8,8 +8,10 @@ const forwardBtn = document.getElementById("forward");
 const radioBtn = document.getElementById('radio-app');
 
 const contentArray = [
-    {nameMusic: "Take me", musicSource: `<source src="/img/jansyry.wav" type="audio/mpeg">`, duration:96},
-    {nameMusic: "Take me to church", musicSource: `<source src="/img/jansyry.wav" type="audio/mpeg">`, duration:96}
+    {nameMusic: "Jan syry", musicSource: `<source src="/mus/jansyry.wav" type="audio/mpeg">`, duration:96},
+    {nameMusic: "Aq bosağa", musicSource: `<source src="/mus/akbosaga.mp3" type="audio/mpeg"> type="audio/mpeg">`, duration:155},
+    {nameMusic: "Şudyñ boiynda", musicSource: `<source src="/mus/shu.mp3" type="audio/mpeg"> type="audio/mpeg">`, duration:96},
+    {nameMusic: "Toi jyry", musicSource: `<source src="/mus/toizhyry.mp3" type="audio/mpeg"> type="audio/mpeg">`, duration:182},
 ];
 
 let index = 0;
@@ -33,6 +35,7 @@ function animation(){
     
 };
 playButton.onclick=()=>{
+    // console.log("in play button")
     playButton.classList.add("hide");
     pauseButton.classList.remove("hide");
     myAudio.play(); 
@@ -70,7 +73,6 @@ function onDrag({movementX, movementY}){
 
 player.onmousedown = ()=>{
     mouseDown = true;
- 
     player.addEventListener("mousemove", onDrag);
 };
 
@@ -108,12 +110,17 @@ forwardBtn.addEventListener("click", ()=> {
     width = 0;
     progressBar.style.width = 0+'px';
   }
-  function updatePlayer(index){  
+  async function updatePlayer(index){  
     myAudio.innerHTML = contentArray[index].musicSource;
     duration = contentArray[index].duration;
     widthPercent = 200/duration;
     titlePlayer.innerHTML =contentArray[index].nameMusic;
-   
-    myAudio.load();
+    // console.log(myAudio)
+    try {
+      await myAudio.load();
+      
+    } catch (err) {
+      console.log("errorrrr:" + err);
+    }
     playButton.click();
   }

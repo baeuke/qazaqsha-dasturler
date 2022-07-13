@@ -48,7 +48,7 @@ function scrollHandler(e) {
    sections.forEach(item => {
     // console.log(item);
     const rect = item.getBoundingClientRect(); //     console.log(rect);
-      console.log(item)
+      // console.log(item)
    if (rect.top + item.offsetHeight / 2 < targetY) {
       item.classList.add('show-me');
    }

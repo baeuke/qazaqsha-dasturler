@@ -3,7 +3,7 @@ const screenBtn = document.getElementById('screenButton');
 let isFullScreen = false;
 
 let typed = new Typed(".auto-input", {
-    strings: ["Qazaqi Dästürler"],
+    strings: ["Ūlttyq Salt-Dästürler"],
     typeSpeed: 120,
     backSpeed: 0,
     loop: false

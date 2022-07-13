@@ -97,6 +97,7 @@ body {
    margin-top: 0;
    font-size: smaller;
    font-weight: lighter;
+   opacity: 0.75;
 }
 
 #radio-app:hover {
@@ -112,13 +113,29 @@ body {
 }
 
 .top-section {
+  
    /* text-align: center; */
    padding: 4rem 0;
    max-width: 600px;
    height: 25vh;
    /* margin: 0 auto; */
 }
-
+.box{
+   position: relative;
+}
+.picture{
+   position: absolute;
+   right: 0;
+   top: 35%;
+   bottom: 50%;
+}
+.left {
+   /* top */
+   left: 0;
+}
+.picture img {
+   width: 300px;
+}
 .timeline {
    position: relative;
    min-height: 150px;
@@ -135,7 +152,7 @@ body {
    z-index: 2;
    width: 2px;
    left: calc(50% - 1px);
-   top: -10%;
+   top: -4%;
    bottom: -50%;
    background-color: black;
    /* display: none; */
@@ -175,7 +192,7 @@ body {
 
 .odd {
    flex-direction: row-reverse;
-   transform: translateX(100%)
+   transform: translateX(100%);
 }
 
 .dot {
@@ -230,7 +247,7 @@ button:focus{
    z-index: 100;
    /* background-color: rgb(247, 238, 217); */
    background-color: rgb(247, 238, 217);
-   background: repeating-linear-gradient(rgba(247, 236, 211, 1), rgb(245, 220, 176) 1px, rgba(247, 236, 211, 1) 1px, rgb(245, 220, 176) 4px);
+   background: repeating-linear-gradient(rgba(247, 236, 211, 1), rgb(245, 220, 176) 1px, rgba(247, 236, 211, 0.9) 1px, rgba(245, 220, 176, 0.9) 4px);
    position: fixed;
    margin: 0%;
    border: solid 2px;
@@ -296,18 +313,3 @@ button:focus{
 }
 
 
-
-
-.picture {
-      /* opacity:s 0; */
-      /* transform: translateX(100%); */
-      position: absolute;
-      transition: 600ms ease;
-      position: relative;
-      /* z-index: 1; */
-      margin: 100px 0;
-      padding: 1rem;
-      border-radius: 1rem;
-      align-items: center;
-      min-height: 600px;
-}

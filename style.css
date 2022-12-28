@@ -425,5 +425,5 @@ button:focus{
    opacity: .5;
    font-family: 'Source Code Pro', monospace;
    left: calc(50% - 9px);
-   top: -288px;
+   top: -278px;
 }

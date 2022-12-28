@@ -5,13 +5,19 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title></title>
+   <title>Kazakh Traditions</title>
    <!-- <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css"> -->
    <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
       integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/chicagoflf" type="text/css"/> 
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+   <link rel="icon" href="./img/icon_16.png">
+   <link rel="icon" href="./img/icon_32.png">
+   <link rel="icon" href="./img/icon_48.png">
+   <link rel="icon" href="./img/icon_96.png">
 </head>
 
 <body onload="startTime()">
@@ -23,7 +29,10 @@
          <!-- Qazaqi dästürler -->
       </div>
       <div class="menu">
-         <div class="fullscreen"><i class="fa-solid fa-expand"></i><span id="screenButton">Fullscreen</span></div>
+         <div class="fullscreen" id="fullscreen-block">
+            <i class="fa-solid fa-expand"></i>
+            <span id="screenButton">Fullscreen</span>
+         </div>
          <div id="time"></div>
       </div>
       
@@ -74,9 +83,14 @@
             <h1>
                <span class="auto-input"></span>
             </h1>
+            <span class="auto-input2"></span>
+            <br>
+            <span class="auto-input22"></span>
+            <br><br>
             <p>
-               <span class="desc"></span>
-         
+               <!-- <span class="desc"></span> -->
+               <!-- There is no nation in the world that does not have its own traditions, which help passing on accumulated experience, knowledge to the new generations. Traditions are of great importance in modernizing all spheres of culture and spiritual life, in realizing the efforts of future generations to make life richer, more beautiful, and more meaningful, in ensuring the continuity of the new and the old, in the harmonious development of society and the individual. Ingraining traditions helps to form socially necessary qualities, customs and behavioral skills in people. -->
+               In Kazakhstan, there has always been a cult of the child in the family, which is reflected in folklore. Kazakhs believe that the house, where there is a child, is bright and happy, and the house without children is like a grave. Children's traditions of the Kazakh people are closely connected with folk beliefs and cults. The rituals performed for girls and boys until they reach the age of 6 are almost identical. Let's see the differences :)
             </p>
             <h3>
                <span class="desc2"></span>
@@ -88,7 +102,7 @@
                <img src="/img/ul.png" alt="" id="genderPicture">
             </div>
             <div class="genderBtn" id="genderBtn">
-               <img src="/img/buttonUl.png" alt="">
+               <img src="/img/boy-btn.png" alt="">
             </div>
          
          </div>
@@ -96,6 +110,7 @@
 
 
       <div class="timeline">
+         <div class="arrow">↓</div>
          <div class="line" id="line"></div>
 
          <div class="wrapper">
@@ -105,20 +120,13 @@
                   <div class="dot"></div>
 
                   <div class="content">
-                     <h2>Shildehana</h2>
+                     <h2>Shildekhana</h2>
                      <p>
-                        Шілдехана шілделік, шілде күзет – өмірге келген нәрестенің құрметіне жасалатын той.
-                        <br> </br> Мал шаруашылығымен айналысқан қазақ халқы адам өмірге келгеннен кейін, жақындарына сүйінші сұрап жаушы
-                        жібереді.
+                        To celebrate <span id="shildehana" class="spanP">the birth of a baby,</span> a shildekhana festival is held.
+                        <br></br> 
+                        It is held on the day when this joyful event occurred. The person who first notified about childbirth receives gifts.
                         <br></br>
-                        <span id="shildehana" class="spanP">
-                           Сүйінші хабарды жеткізгендер ұл туса – “ат ұстар” немесе “жылқышы” деп хабарлаған.
-                        </span>
-                        <br> </br>
-                        Одан кейін туған-туыстар, көршілер және алыс-жақын ағайындар Шілдеханаға жиналады да “бауы берік болсын” деп тілек
-                        айтып, шашу шашып келеді. Шілдехана мәні алғаш нәрестені жын-періден қорғап, “күзету” деген сенімге саяды.
-                        Сондықтан оны “Шілде күзет” деп те атайды. Бұл ғұрыптың түпкі мәні бала мен ананы тіл-көзден сақтау,
-                        жын-шайтандардан қорғау дегеннен туындаған.
+                        Relatives, friends, and relatives come to the home of young parents to celebrate the emergence of a new member of the community. They congratulate parents, express wishes to the baby, and in the evening - have fun and enjoy a hearty dinner. The father of the child slaughters the sacrificial lamb and distributes the meat to relatives and friends.
                      </p>
                   </div>
                </div>
@@ -133,20 +141,18 @@
                <div class="section odd">
                   <div class="dot"></div>
                   <div class="content odd">
-                     <h2>Qyrqynan şyğaru</h2>
+                     <h2>Qyrqynan shygaru</h2>
+                     <!-- <h2>Qyrqynan şyğaru</h2> -->
                      <p>
-                        Қазақ жаңа туған баланы қырық күнге дейін сыртқа шығармай, бөтен көзге көрсетпей ұстайды. Қырық күн өткен соң
-                        қырқынан шығару дәстүрін жасайды.
-                        </br> Жаңа туған нәрестені шырақ жағып күзетіп, қасынан адам үзілмей бағады. Сәбиді қырық күн бойы тұзды, сабынды
-                        немесе маралшөп салынған суға алма-кезек шомылдырып отырады. Тұзды суға шомылып өскен баланың денесі шымыр болады,
-                        аурудан қорғайды. Өскенде жарасы тез жазылатын болады. Ал сабынды су денесіндегі микробтарды тазартады. Маралшөп
-                        қосылған су баланың тез ширауына көмектеседі. Ал қырық күннен аман өткен нәрестені қарақұлақтанды деп қуанып,
-                        қырқынан шығару тойын жасайды.
-                     
+                        - literally meaning <span class="spanP">“coming out of 40 days”;</span> it is celebrated when it is about 40 days since a child was born.
                         <br></br>
-                        <span id="qyrqynansh" class="spanP">
-                           Әдеттеу, ұл баланы 37- 39 күнде қырқынан шығарады
+                        It is believed that before the end of this period, the baby is too weak and unprotected from the effects of the external environment, and especially - the evil forces. Until the end of forty days a newborn is not shown to strangers.
+                        <br></br>
+                        However, the day when this happens it is considered the second birthday, and a baby is officially presented to the relatives, and family friends.
+                        <br></br>
+                        40 days is an approximate term: <span id="qyrqynansh" class="spanP">for a boy, they celebrate it on 37–39th day.
                         </span>
+                     </p>
                   </div>
                </div>
             
@@ -161,16 +167,14 @@
                <div class="section">
                   <div class="dot"></div>
                   <div class="content">
-                     <h2>Tūsaukeser</h2>
+                     <!-- <h2>Tūsaukeser</h2> -->
+                     <h2>Tusaukeser</h2>
                      <p>
-                        Тұсаукесер – сәби бесіктен шығып, еңбектеуден өткен соң, қаз тұрып, тәй-тәй басқанда жасалатын дәстүр. Бала екі
-                        табанымен тұрып, алғашқы қадам жасауға талпына бастаған сәтте дана қазақ “баламыз тез жүріп кетсін” деген ниетпен,
-                        сәбидің тұсауын кестіріп, думандатын той жасайды.
-                        </br>
-                        Дана қазақ баланың тұсауын ала жіппен, малдың тоқ ішегімен және көк шөппен кестірген. Ала жіппен – бала ешкімнің ала
-                        жібін аттамасын, ақ пен қараны ажырата алатын, адал азамат болсын деген ниетпен кеседі. Ал малдың тоқ ішегімен кесу
-                        себебі, бала бай, дәулетті азамат болсын деп ырымдауында. Сондай-ақ, бала шөптей қаулап өссін, шөп сияқты көгеріп,
-                        көбейіп, көктесін, ұрпақты болсын деп ырымдап, тұсауын көк шөппен кеседі.
+                        - from kazakh, translated as "fetter cutting". <span class="spanP">A day when the baby took his first steps</span> the oldest and most respected person is invited to perform a ceremony of Tusaukeser.
+                        <br></br>
+                        Usually held at 1 year birthday. The invited special guest should cut the special ropes, beset baby’s legs, in order to ensure that in future the kid could walk nicely and run fast.
+                        <br></br>
+                        Also, there are a few things put in front of the baby. It’s believed that in future the child will deal with the thing he or she chooses (makes steps toward that thing).
                      </p>
                   </div>
                </div>
@@ -187,12 +191,8 @@
                   <div class="dot"></div>
                   <div class="content odd">
                      <h2 id="sundettoiTitle">Sündet toi</h2>
-                     <p id="sundettoiP" class="spanP">
-                        Қазақта шілдеханадан соң ең атаулы той – сүндет тойы. Ес тоқтатата бастаған баланың өз өміріндегі ағайын-туыс
-                        ортасында өзіне деген ықыласты сезініп, құттықтаулар мен бата-тілекті қабылдайтын алғашқы тойы.
-                        </br>
-                        Сүндетке отырған баланың да мінез-құлқы бірден өзгереді. Шапқылап ойнап жүретін баланың мінезі салмақтанып,
-                        жүріс-тұрысы жинақталып, байсалды қалыпқа түседі. Айналасына да басқаша қарай бастайды.
+                     <p id="sundettoiP">
+                        - a <span class="spanP">circumcision</span> ceremony for a <span class="spanP">boy of 4-5 years old.</span> It is considered to be one of the remarkable days of a boy's life. Relatives and friends of the family gather together, eat national cuisine, and have fun.
                      </p>
                   </div>
                </div>
@@ -202,21 +202,19 @@
                </div>
             
             </div>
-
-         
-
+            
             <div class="box">
                <div class="section">
                   <div class="dot"></div>
                   <div class="content">
-                     <h2>Tılaşar</h2>
+                     <!-- <h2>Tılaşar</h2> -->
+                     <h2>Tilashar</h2>
                      <p>
-                        Тілашар тойына арнап шашу шашады. Әр отбасы баласы жеті жасқа толған соң медресеге, мектепке оқуға береді. Бұл да
-                        бала өміріндегі елеулі оқиға, есте қаларлық елеулі кезең болып табылады. Осы күні балаға жаңа киім кигізіп, оқу
-                        жабдықтарын дайындап, шағын той жасайды. Мұны дәстүрлі «тілашар» тойы деп атайды.
-                        </br>Үлкен-кішілер балаға өсті, азамат болды, «ғалым бол», «ақын бол» деген сияқты тілек білдіріп, бата береді. Жаңа
-                        киіміне байғазы, тағамдар ұсынады. Бұл тәрбиеден бала өскендігінің белгісін сезінеді, оқуға құмарлығы артады.
-                        Жақын-жуық адамдар баланың ата-анасына құтты болсын айтып, балаға сәт-сапар тілейді.
+                        - directly translated as opening of tongue/language. 
+                        <br></br>
+                        A celebration organized in honor of the <span class="spanP">beginning of the school period in the life of a child.</span> The first day at school is a very memorable moment for a child.
+                        <br></br>
+                        Tilashar is usually held at the ages of 6-7. During the ceremony, the elderly bless him to study well. Kid gets presents — “baigazy”. The main purpose of the rite is to show that a child is becoming an adult, that now a new world is opening up for him.
                      </p>
                   </div>
                </div>
@@ -229,18 +227,17 @@
 
 
             <div class="box" id="atqaMingyzu">
-               <div class="section odd" >
+               <div class="section odd">
                   <div class="dot"></div>
                   <div class="content odd">
-                     <h2> Atqa mıngızu
-                     </h2>
-                     <p class="spanP">
-                        Баланы атқа мінгізу - ата-аналардың баласының алғаш атқа міну қуанышына жасайтын тойы. Қозы жаю сияқты т.б.
-                        ұсақ шаруашылыққа қолқабыс ете бастауын айқындайтын тіршілік цикліне байланысты атқарылатын ғұрыптардың бірі.
-                        Ата-ана үшін жеткіншегінің жетілуі, әр кезеңі жаңаша қуаныш, келер күннің жақсы үміті. Баланы атқа мінгізетін
-                        күні ауыл адамдары түгел жиналады. Атқа мінгізу жоралғысы бала 5-6 жасқа келгенде жасалады.   Аттың
-                        жал-құйрығына, бастан-аяқ жаңа киім киген баланың баскиіміне, шапанына арқасына шоқтап үкі тағылады. Үкі —
-                        қазақ ұғымында — «зиянды күштердің залалын қағатын құс». Балаға арнайы дайындаған ашамай ер атқа ерттеледі.
+                     <!-- <h2> Atqa mıngızu</h2> -->
+                     <h2>Atqa mingizu</h2>
+                     <p>
+                        - when <span class="spanP">boy saddles a horse for the first time.</span>
+                        <br></br>
+                        A saddle is an extremely important thing for any nomad. Kazakhs taught boys to ride a horse starting from the age of five. On this day, elders blessed the young rider and parents organized a small celebration in honor of their son.
+                        <br></br>
+                        The child's first encounter with the horse is celebrated as a big event. The child is dressed in new clothes, wears uki (eagle owl feathers that are believed to protect the rider), sits on the saddle decorated with patterns (ashamai). He sets off to visit his relatives. Relatives, in their turn, throw shashu (a rite for abundance) and give various presents to the boy, e.g. various saddle accessories.
                      </p>
                   </div>
                </div>
@@ -248,21 +245,16 @@
                <div class="picture left" >
                   <img class="some" id="at" src="/img/at.png" alt="" srcset="">
                </div>
-            
             </div>
 
-
-
-            
-
-            
          </div>
-         <div class="dream">
+         <!-- <div class="dream">
             <img width="400px" src="/img/dream1.png" alt="" srcset="">
          </div>
          <div class="camry">
             <img  src="/img/camry.png" alt="" srcset="">
-         </div>
+         </div> -->
+         
       </div>
          
       
@@ -273,7 +265,11 @@
 
 
    </div>
-   
+   <div class="credits">
+      <div class="by">Developed by <a href="https://github.com/baeuke" target="_blank">Baurzhan</a> and <a href="https://github.com/dilnazZhumabaikyzy" target="_blank">Dilnaz</a></div>
+      <div class="credits-img">credits for the images to <a href="https://www.instagram.com/art_aika/" target="_blank">@art_aika</a></div>
+      <div class="credits-txt">credits for the text content to <a href="https://el.kz/en/kazakh_traditions_associated_with_babies_26779/" target="_blank">link</a></div>
+   </div>
    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
    
    <script src="script.js"></script>

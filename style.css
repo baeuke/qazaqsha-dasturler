@@ -1,7 +1,10 @@
 @import url('http://fonts.cdnfonts.com/css/perfect-dos-vga-437');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 body {
+   
    background-color: rgb(249, 227, 175);
    background: repeating-linear-gradient(rgba(249, 227, 175, 1), rgb(247, 223, 169) 1px, transparent 1px, transparent 4px);
    /* font-family: 'VT323', monospace; */
@@ -10,9 +13,15 @@ body {
    margin: 0;
    padding: 0;
    font-family: 'Press Start 2P', cursive;
+
+   font-family: 'ChicagoFLFRegular';
    
-      overflow-x: hidden;
+   overflow-x: hidden;
+   /* background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, .25) 50%), linear-gradient(90deg, rgba(255, 0, 0, .06), rgba(0, 255, 0, .02), rgba(0, 0, 255, .06)); */
+   /* background: #fff url(img/bg.png) 0 0 repeat; */
+
 }
+
 
 /* ************ START HEADER STYLES ************ */
 .header {
@@ -31,6 +40,15 @@ body {
 }
 
 
+.auto-input2, .auto-input22 {
+   color: rgb(74, 69, 100);
+   font-size: 14px;
+   font-weight: 100;
+}
+
+.itls {
+   font-style: italic;
+}
 
 .header img {
    width: 40px;
@@ -103,7 +121,9 @@ body {
    /* font-size: smaller; */
    font-weight: lighter;
    opacity: 0.75;
-   font-family: 'Perfect DOS VGA 437 Win';
+   font-size: 14px;
+   /* font-family: 'Perfect DOS VGA 437 Win'; */
+   /* font-family: 'Press Start 2P'; */
 }
 
 #radio-app:hover {
@@ -112,7 +132,7 @@ body {
 
 .container {
    padding: 2rem;
-   padding-bottom: 400px;
+   padding-bottom: 64px;
    margin: 0 auto;
    /* auto for right and left nakes an elem centered */
    max-width: 800px;
@@ -129,8 +149,8 @@ body {
 }
 
 .top-section p {
-   height: 33vh;
-   font-size: 10px;
+   height: 28vh;
+   font-size: 14px;
    text-decoration-line: none;
    line-height: 200%;
 }
@@ -192,7 +212,7 @@ body {
    z-index: 2;
    width: 2px;
    left: calc(50% - 1px);
-   top: -200px;
+   top: -214px;
    bottom: -50%;
    background-color: black;
    /* display: none; */
@@ -251,6 +271,16 @@ body {
 
 .content {
    width: calc(50% - 2rem);
+   
+}
+
+.content p {
+   font-size: 14px;
+}
+
+
+.content h2 {
+   color: rgb(36, 23, 99);
 }
 
 .show-me {
@@ -258,7 +288,24 @@ body {
    opacity: 1;
 }
 
+.credits {
+   font-size: 13px;
+   width: fit-content;
+   margin: 10px auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
 
+.credits div a {
+   text-decoration: none;
+   color: #000;
+}
+.credits div a:hover {
+   color: rgb(36, 23, 99);
+   font-size: 16px;
+}
 
 .buttons{
    display: flex;
@@ -295,8 +342,9 @@ button:focus{
    width: 300px;
    display: flex;
    flex-direction: column;
-   top: 45%;
-   left: 20px;
+   top: 70%;
+   /* left: 10px; */
+   right: 3%;
 }
 
 .part3 {
@@ -338,21 +386,9 @@ button:focus{
    margin-bottom: 6px;
 }
 
-/* .blackLine::after{
-   margin-left: 75px;
-   position: absolute;
-   top: -3px;
-   display: block;
-   content: '';
-   width: 3px;
-   background-color: rgb(13, 13, 13);
-   height: 10px;
-} */
 .hide {
    display: none;
 }
-
-
 
 .genderPicture {
    display: flex;
@@ -379,20 +415,15 @@ button:focus{
 .spanP {
    color: rgb(36, 23, 99);
    font-size: 15px;
+   text-decoration: underline;
 }
 
-
-.camry {
+.arrow {
    position: absolute;
-   bottom: -500px;
-}
-
-.hidden {
-   display: none;
-}
-
-.dream {
-   right: 10px;
-   position: absolute;
-   bottom: -200px;
+   color: rgb(36, 23, 99);
+   font-size: 32px;
+   opacity: .5;
+   font-family: 'Source Code Pro', monospace;
+   left: calc(50% - 9px);
+   top: -288px;
 }

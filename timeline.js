@@ -16,7 +16,7 @@ let set = 0;
 const targetY = window.innerHeight * .9;
 
 function hThree() {
-   helem.innerHTML = "Qazaqi dästürler"
+   helem.innerHTML = "Qazaqi dästürler | Kazakh Traditions"
 }
 
 function scrollHandler(e) {

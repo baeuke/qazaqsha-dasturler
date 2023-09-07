@@ -1,9 +1,10 @@
 # Qazaqsha Dasturler
 
-
-<img src="qt-logo.png" alt="Qazaqsha Dasturler logo" width="50%">
-
 A dynamic website that introduces users to Kazakh baby rituals and customs with pleasant background music.
+
+<img src="qt-logo.png" alt="Qazaqsha Dasturler logo" width="40%">
+
+
 
 **Website URL:** [qazaqsha-dasturler.vercel.app](https://qazaqsha-dasturler.vercel.app)
 

@@ -17,3 +17,5 @@ Qazaqsha Dasturler is a web application inspired by the Poolsuite FM website. Th
 - **Dastur FM Icon:** Once the player is closed, it can be reopened by clicking on the "Dastur FM" radio icon.
 
 - **Fullscreen Mode:** Users can go fullscreen and view the website as a presentation by clicking on the "Fullscreen" button in the upper right corner.
+
+**Note:** This project was developed by Baurzhan and Dilnaz as a part of nFactorial Incubator Hackathon 2022.

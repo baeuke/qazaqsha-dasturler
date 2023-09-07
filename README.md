@@ -1,6 +1,6 @@
 # Qazaqsha Dasturler
 
-![Qazaqsha Dasturler](https://github.com/baeuke/qazaqsha-dasturler/blob/main/preview.png)
+![Qazaqsha Dasturler](my-pixel-img.png)
 
 A dynamic website that introduces users to Kazakh baby rituals and customs with pleasant background music.
 
@@ -18,4 +18,4 @@ Qazaqsha Dasturler is a web application inspired by the Poolsuite FM website. Th
 
 - **Fullscreen Mode:** Users can go fullscreen and view the website as a presentation by clicking on the "Fullscreen" button in the upper right corner.
 
-**Note:** This project was developed by Baurzhan and Dilnaz as a part of nFactorial Incubator Hackathon 2022.
+**Note:** This project was developed by Baurzhan and Dilnaz as a part of the nFactorial Incubator Hackathon 2022.

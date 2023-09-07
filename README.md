@@ -1,7 +1,7 @@
 # Qazaqsha Dasturler
 
 
-<img src="my-pixel-img.png" alt="Qazaqsha Dasturler logo" width="50%">
+<img src="qt-logo.png" alt="Qazaqsha Dasturler logo" width="50%">
 
 A dynamic website that introduces users to Kazakh baby rituals and customs with pleasant background music.
 
